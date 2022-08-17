@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('/build/fonts/GothamPro-Light.eot');
+	src: local('/build/fonts/Gotham Pro Light'), local('/build/fonts/GothamPro-Light'),
+	url('/build/fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('/build/fonts/GothamPro-Light.woff') format('woff'),
+	url('/build/fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('/build/fonts/GothamPro.eot');
+	src: local('/build/fonts/Gotham Pro'), local('/build/fonts/GothamPro'),
+	url('/build/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+	url('/build/fonts/GothamPro.woff') format('woff'),
+	url('/build/fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('/build/fonts/GothamPro-Medium.eot');
+	src: local('/build/fonts/Gotham Pro Medium'), local('/build/fonts/GothamPro-Medium'),
+	url('/build/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('/build/fonts/GothamPro-Medium.woff') format('woff'),
+	url('/build/fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('/build/fonts/GothamPro-Bold.eot');
+	src: local('/build/fonts/Gotham Pro Bold'), local('/build/fonts/GothamPro-Bold'),
+	url('/build/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('/build/fonts/GothamPro-Bold.woff') format('woff'),
+	url('/build/fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('/build/fonts/GothamPro-Black.eot');
+	src: local('/build/fonts/Gotham Pro Black'), local('/build/fonts/GothamPro-Black'),
+	url('/build/fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+	url('/build/fonts/GothamPro-Black.woff') format('woff'),
+	url('/build/fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
