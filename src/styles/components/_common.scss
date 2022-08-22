@@ -20,7 +20,6 @@ html {
 html,
 body {
 	font-weight: normal;
-	font-size: 16px;
 	font-style: normal;
 	line-height: 1;
 }
@@ -42,6 +41,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: 400;
 }
 @media (max-width: 767.98px) {
+	html,
+	body {
+		font-size: 14px;
+	}
 	h1, .h1 {
 		font-size: 24px;
 		line-height: 29px;
@@ -55,11 +58,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 		line-height: 19px;
 	}
 	h5, .h5 {
-		font-size: 10px;
-		line-height: 11px;
+		font-size: 14px;
+		line-height: 16px;
 	}
 }
 @media (min-width: 768px) {
+	html,
+	body {
+		font-size: 16px;
+	}
 	h1, .h1 {
 		font-size: 50px;
 		line-height: 60px;
@@ -109,24 +116,12 @@ svg {
 	pointer-events: none;
 }
 .icon {
+	min-width: 24px;
+	width: 24px;
+	min-height: 24px;
+	height: 24px;
 	object-fit: cover;
 	pointer-events: none;
-}
-@media (max-width: 767.98px) {
-	.icon {
-		min-width: 20px;
-		min-height: 20px;
-		width: 20px;
-		height: 20px;
-	}
-}
-@media (min-width: 768px) {
-	.icon {
-		min-width: 32px;
-		min-height: 32px;
-		width: 32px;
-		height: 32px;
-	}
 }
 
 p {
@@ -147,6 +142,15 @@ p {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+}
+
+.ruble-font-regular {
+	font-family: "GothamProRRegular";
+	font-weight: 400;
+}
+.ruble-font-bold {
+	font-family: "GothamProRBold";
+	font-weight: 700;
 }
 
 @media (max-width: 767.98px) {
@@ -242,21 +246,24 @@ p {
 	border: 0;
 	font-family: "Gotham Pro", sans-serif;
 	font-weight: 400;
+	line-height: 16px;
 	cursor: pointer;
 	transition: 0.15s ease-in-out;
 
 	& .icon {
-		position: relative;
-		fill: var(--white-color);
-	}
-	& .text-content {
-		white-space: nowrap;
-		overflow: hidden;
+		min-width: 16px;
+		min-height: 16px;
+		width: 16px;
+		height: 16px;
 	}
 	& .icon,
 	& .text-content {
 		user-select: none;
 		pointer-events: none;
+	}
+	& .text-content {
+		white-space: nowrap;
+		overflow: hidden;
 	}
 }
 .btn-primary {
@@ -287,39 +294,21 @@ p {
 }
 @media (max-width: 767.98px) {
 	.btn {
+		min-width: 110px;
+		min-height: 36px;
+		height: 36px;
+		padding-right: 12px;
+		padding-left: 12px;
 		border-radius: 4px;
-		line-height: 12px;
+		font-size: 14px;
 
-		&:not(.btn-small):not(.btn-secondary) {
-			min-width: 160px;
-			width: 160px;
-			min-height: 38px;
-			height: 38px;
-			padding: 13px;
-		}
-		&:not(.btn-small) {
-			font-size: 10px;
-		}
-		&-small {
-			min-width: 105px;
-			width: 105px;
-			min-height: 24px;
-			height: 24px;
-			padding: 6px;
-			font-size: 8px;
+		&:not(.btn-secondary) {
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 		&-secondary {
-			min-width: 175px;
-			width: 175px;
-			min-height: 48px;
-			height: 48px;
-			padding: 16px 12px;
-		}
-		& .icon {
-			min-width: 12px;
-			min-height: 12px;
-			width: 12px;
-			height: 12px;
+			padding-top: 8px;
+			padding-bottom: 8px;
 		}
 		& .text-content-mr {
 			margin-right: 4px;
@@ -331,45 +320,27 @@ p {
 }
 @media (min-width: 768px) {
 	.btn {
+		min-width: 200px;
+		min-height: 48px;
+		height: 48px;
+		padding-right: 16px;
+		padding-left: 16px;
 		border-radius: 8px;
-		line-height: 24px;
+		font-size: 16px;
 
-		&:not(.btn-small):not(.btn-secondary) {
-			min-width: 400px;
-			width: 400px;
-			min-height: 100px;
-			height: 100px;
-			padding: 38px;
-		}
-		&:not(.btn-small) {
-			font-size: 24px;
-		}
-		&-small {
-			min-width: 200px;
-			width: 200px;
-			min-height: 48px;
-			height: 48px;
-			padding: 12px;
-			font-size: 14px;
+		&:not(.btn-secondary) {
+			padding-top: 16px;
+			padding-bottom: 16px;
 		}
 		&-secondary {
-			min-width: 230px;
-			width: 230px;
-			min-height: 64px;
-			height: 64px;
-			padding: 18px 12px;
-		}
-		& .icon {
-			min-width: 24px;
-			min-height: 24px;
-			width: 24px;
-			height: 24px;
+			padding-top: 14px;
+			padding-bottom: 14px;
 		}
 		& .text-content-mr {
-			margin-right: 10px;
+			margin-right: 8px;
 		}
 		& .text-content-ml {
-			margin-left: 10px;
+			margin-left: 8px;
 		}
 	}
 }
@@ -391,7 +362,7 @@ p {
 }
 .bg-gears {
 	background-repeat: repeat;
-	background-image: url("/build/img/bg-texture-gears.png");
+	background-image: url("/build/img/bg-texture-gears-part.png");
 }
 .bg-contactus {
 	background-image: url("/build/img/bg-texture-contactus.png");
@@ -413,6 +384,9 @@ p {
 	.bg-lattice.bg-textured {
 		background-size: 768px 240px;
 	}
+	.bg-gears.bg-textured {
+		background-size: 106px 121px;
+	}
 }
 @media (min-width: 768px) {
 	.bg-textured {
@@ -421,8 +395,11 @@ p {
 	.bg-lattice.bg-textured {
 		background-size: 1920px 600px;
 	}
+	.bg-gears.bg-textured {
+		background-size: 212px 242px;
+	}
 }
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
 	.bg-textured,
 	.bg-lattice.bg-textured {
 		background-size: cover;
@@ -476,18 +453,18 @@ p {
 		}
 		& .agreement-msg {
 			margin-bottom: 20px;
-			font-size: 8px;
+			font-size: 12px;
 		}
 	}
 	.field-input {
 		min-height: 40px;
 		height: 40px;
-		padding: 14px 24px;
+		padding: 13px 24px;
 		border-radius: 45px;
 	}
 	.field-input,
 	.field-input::placeholder {
-		font-size: 10px;
+		font-size: 14px;
 	}
 }
 @media (min-width: 768px) {
@@ -501,7 +478,7 @@ p {
 		}
 		& .agreement-msg {
 			margin-bottom: 32px;
-			font-size: 20px;
+			font-size: 16px;
 		}
 	}
 	.field-input {
@@ -531,7 +508,8 @@ p {
 }
 @media (max-width: 767.98px) {
 	.sent-successfully {
-		padding: 40px 15px 45px;
+		padding-top: 40px;
+		padding-bottom: 45px;
 		border-radius: 12px;
 
 		&__view {
@@ -555,7 +533,6 @@ p {
 }
 @media (min-width: 768px) {
 	.sent-successfully {
-		padding: 80px 80px 160px;
 		border-radius: 20px;
 
 		&__view {
@@ -572,8 +549,8 @@ p {
 			font-size: 40px;
 		}
 		&__descr-text {
-			font-size: 35px;
-			line-height: 44px;
+			font-size: 32px;
+			line-height: 40px;
 		}
 	}
 }
@@ -644,18 +621,16 @@ body.compensate-for-scrollbar {
 		border-radius: 12px;
 	}
 	.modal-body {
-		min-width: 70vw;
-		width: 70vw;
+		min-width: 290px;
+		width: 290px;
+
+		& .modal-content-container {
+			padding: 30px 15px;
+		}
 	}
 	.modal-title {
 		margin-bottom: 24px;
 		padding-right: 30px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1199.98px) {
-	.modal-body {
-		min-width: 720px;
-		width: 720px;
 	}
 }
 @media (min-width: 768px) {
@@ -663,19 +638,15 @@ body.compensate-for-scrollbar {
 		border-radius: 20px;
 	}
 	.modal-body {
-		& .modal-contactus {
-			padding-right: 115px;
-			padding-left: 115px;
+		min-width: 680px;
+		width: 680px;
+
+		& .modal-content-container {
+			padding: 75px;
 		}
 	}
 	.modal-title {
 		padding-right: 24px;
-	}
-}
-@media (min-width: 1200px) {
-	.modal-body {
-		min-width: 950px;
-		width: 950px;
 	}
 }
 

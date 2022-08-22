@@ -26,12 +26,12 @@
                                     <div class="footer-contscts__social">
                                         <div class="footer-contscts__social-title">Наши соц.сети</div>
                                         <div class="footer-contscts__social-list">
-                                            <a class="footer-contscts__social-item" href="javascript:;" target="_blank">
+                                            <a class="footer-contscts__social-item" href="https://vk.com/andromedaspace" target="_blank">
                                                 <svg class="icon">
                                                     <use href="/build/img/sprite.svg#vk"></use>
                                                 </svg>
                                             </a>
-                                            <a class="footer-contscts__social-item" href="javascript:;" target="_blank">
+                                            <a class="footer-contscts__social-item" href="https://t.me/andromspace" target="_blank">
                                                 <svg class="icon">
                                                     <use href="/build/img/sprite.svg#tg"></use>
                                                 </svg>
@@ -64,26 +64,19 @@
                                     </div>
                                 </div>
                                 <div class="col col-12 col-lg-6 order-1 order-lg-2">
-                                    <form class="footer-contactus" action="" method="">
+                                    <form class="footer-contactus" action="send.php" method="post">
                                         <div class="field-wrapper field-wrapper-border">
                                             <input class="field-input"
                                                    type="text"
-                                                   name=""
+                                                   name="name"
                                                    placeholder="Ваше имя"
                                             >
                                         </div>
                                         <div class="field-wrapper field-wrapper-border">
                                             <input class="field-input"
                                                    type="tel"
-                                                   name=""
+                                                   name="tel"
                                                    placeholder="Ваш телефон"
-                                            >
-                                        </div>
-                                        <div class="field-wrapper field-wrapper-border">
-                                            <input class="field-input"
-                                                   type="email"
-                                                   name=""
-                                                   placeholder="Ваш e-mail"
                                             >
                                         </div>
                                         <div class="field-wrapper">
@@ -91,8 +84,7 @@
                                                 Нажимая кнопку, я соглашаюсь на обработку персональных данных и с <a class="link-tdu" href="javascript:;">правилами</a> пользования Платформой
                                             </div>
                                             <div class="footer-contactus__btn-wrapper">
-                                                <?/*<button class="btn btn-primary" type="submit">  <-- @TODO - tmp*/?>
-                                                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="sentSuccessfully">
+                                                <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="sentSuccessfully">
                                                     <span class="text-content text-content-mr">Оставить заявку</span>
                                                     <svg class="icon">
                                                         <use href="/build/img/sprite.svg#arrow-right-duo"></use>
@@ -113,7 +105,7 @@
         <section class="footer-bottom">
             <div class="container">
                 <a class="logo" href="/">
-                    <img src="/build/img/sprite.svg#logo">
+                    <img src="/build/img/logo.png">
                 </a>
             </div>
         </section>

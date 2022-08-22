@@ -59,9 +59,7 @@ application.prototype.initMapContacts = function () {
 // Init modal popup
 application.prototype.initModalPopup = function () {
     if ($("[data-toggle='modal']").length) {
-        let elemId = null,
-            portfolioGalleryThumbsSlider = null,
-            portfolioGallerySlider = null;
+        let elemId = null;
 
         $(document).on("click", function (e) {
             if ($(".modal-overlay").is(e.target)) {
@@ -69,8 +67,6 @@ application.prototype.initModalPopup = function () {
                 e.stopPropagation();
                 $("body").removeClass("modal-is-visible compensate-for-scrollbar");
                 $("#" + elemId).removeClass("is-visible");
-                portfolioGalleryThumbsSlider.destroy( true, true );
-                portfolioGallerySlider.destroy( true, true );
             }
         });
 
@@ -120,7 +116,6 @@ application.prototype.initSliders = function () {
             grid: {
                 rows: 3,
             },
-            loop: true,
             spaceBetween: 16,
             breakpoints: {
                 768: {
@@ -128,7 +123,8 @@ application.prototype.initSliders = function () {
                     grid: {
                         rows: 1,
                     },
-                    spaceBetween: 20
+                    spaceBetween: 20,
+                    loop: true
                 }
             }
         };
@@ -137,18 +133,72 @@ application.prototype.initSliders = function () {
 
     // Curators slider
     if ($(".js-curators-slider").length) {
-        let curatorsSliderSettings = {
-            slidesPerView: "auto",
-            spaceBetween: 16,
-            centeredSlides: true,
-            loop: true,
-            breakpoints: {
-                768: {
-                    spaceBetween: 30,
-                }
+        let curatorsSliderSettingsMobile,
+            curatorsSliderSettingsDesktop,
+            initCuratorsSliderDesktop,
+            initCuratorsSliderMobile;
+
+        $(window).on("load", setResponsiveSlider);
+        $(window).on("resize", function() {
+            setResponsiveSlider();
+            return location.reload();
+        });
+        function setResponsiveSlider() {
+            if (window.matchMedia("(max-width:767.98px)").matches) {
+                initCuratorsSliderMobile();
+            } else if (window.matchMedia("(min-width:768px)").matches) {
+                initCuratorsSliderDesktop();
             }
+        }
+
+        initCuratorsSliderDesktop = function() {
+            curatorsSliderSettingsDesktop = new Swiper(".js-curators-slider", {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 0,
+                    depth: 50,
+                    modifier: 24,
+                    initialSlide: 3,
+                    slideShadows: false,
+                },
+                navigation: {
+                    nextEl: ".curators-slider-wrapper .swiper-button-next",
+                    prevEl: ".curators-slider-wrapper .swiper-button-prev",
+                },
+                breakpoints: {
+                    992: {
+                        coverflowEffect: {
+                            modifier: 11,
+                        }
+                    },
+                    1200: {
+                        coverflowEffect: {
+                            modifier: 10,
+                        }
+                    }
+                }
+            });
         };
-        new Swiper(".js-curators-slider", curatorsSliderSettings);
+        initCuratorsSliderMobile = function() {
+            curatorsSliderSettingsMobile = new Swiper(".js-curators-slider", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".curators-slider-wrapper .swiper-button-next",
+                    prevEl: ".curators-slider-wrapper .swiper-button-prev",
+                },
+                breakpoints: {
+                    576: {
+                        spaceBetween: 15
+                    }
+                }
+            });
+        };
     }
 
     // Program-plan slider
@@ -165,11 +215,13 @@ application.prototype.initSliders = function () {
         });
     }
 
-    // Program-plan slider
+    // Programs slider
     if ($(".js-program-descr-slider").length) {
         let programDescrSliderSettings = {
             slidesPerView: 1,
             spaceBetween: 16,
+            autoHeight: true,
+            effect: "fade",
             navigation: {
                 nextEl: ".js-program-descr-slider .swiper-button-next",
                 prevEl: ".js-program-descr-slider .swiper-button-prev",
@@ -180,12 +232,15 @@ application.prototype.initSliders = function () {
             breakpoints: {
                 768: {
                     spaceBetween: 80,
+                    autoHeight: false
                 },
                 992: {
                     spaceBetween: 95,
+                    autoHeight: false
                 },
                 1200: {
                     spaceBetween: 120,
+                    autoHeight: false
                 }
             }
         };
@@ -201,14 +256,12 @@ application.prototype.getHighestSlide = function () {
         getHighestSlide();
         $(window).on("resize", getHighestSlide);
         function getHighestSlide() {
-            $(".js-curators-slider").find(".swiper-slide").each(function(i) {
+            $(".js-curators-slider .swiper-slide").each(function(i) {
                 currentSlideHeight = $(this).outerHeight();
-                if(currentSlideHeight > highestSlide) {
-                    highestSlide = currentSlideHeight;
-                } else {
-                    highestSlide = highestSlide;
-                }
+                if(currentSlideHeight > highestSlide) highestSlide = currentSlideHeight;
+                else highestSlide = highestSlide;
             });
+
             $(".js-curators-slider .swiper-slide").css({"height": highestSlide});
         }
     }

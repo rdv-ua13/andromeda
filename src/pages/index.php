@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="top-screen__item bgc-lightblue-blue">
-                <div class="h1 top-screen__title">Успешное it&#8209;будущее для вашего ребёнка</div>
+                <h1 class="h1 top-screen__title">Успешное it&#8209;будущее для вашего ребёнка</h1>
                 <div class="top-screen__subtitle">Развитие цифровых навыков для детей от&nbsp;7&nbsp;до&nbsp;17&nbsp;лет</div>
                 <div class="top-screen__btn">
                     <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
@@ -61,41 +61,44 @@
             <div class="swiper program-plan-slider js-program-plan-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">Робототехника</div>
                         </div>
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">Программирование игр в Scratch</div>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">
                                 3D дизайн, создание игр и анимации
                                 <span class="program-plan-slider__level">начальный уровень</span>
                             </div>
                         </div>
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">
                                 Программирование Python
                                 <span class="program-plan-slider__level">начальный уровень</span>
                             </div>
                         </div>
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
+                            <div class="program-plan-slider__slide-content">Робототехника</div>
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">3D моделирование и веб-дизайн на Unity, Blender
                                 <span class="program-plan-slider__level">продвинутый уровень</span></div>
                         </div>
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">
                                 Программирование Python
                                 <span class="program-plan-slider__level">продвинутый уровень</span>
                             </div>
                         </div>
-                        <div class="program-plan-slider__slide-item">
+                        <div class="program-plan-slider__slide-item" data-toggle="modal" data-target="applyRequest">
                             <div class="program-plan-slider__slide-content">Профориентация</div>
                         </div>
                     </div>
@@ -114,7 +117,7 @@
                     </div>
                 </div>
                 <div class="program-plan__announce-btn">
-                    <button class="btn btn-secondary" type="button">
+                    <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="applyRequest">
                         <span class="text-content text-content-mr">Записаться</span>
                         <svg class="icon">
                             <use href="/build/img/sprite.svg#arrow-right"></use>
@@ -133,92 +136,108 @@
                 <div class="h2 text-center color-white">Наши кураторы</div>
             </div>
 
-            <div class="swiper curators-slider js-curators-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="curators-slider__view">
-                            <img src="/build/img/curators-image1.jpg" alt="">
+            <div class="curators-slider-wrapper">
+                <div class="swiper curators-slider js-curators-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="curators-slider__view">
+                                <img src="/build/img/curators-image1.jpg" alt="">
+                            </div>
+                            <div class="curators-slider__descr">
+                                <div class="curators-slider__descr-title">Епифанова Альбина</div>
+                                <div class="curators-slider__descr-text">
+                                    Высшее педагогическое образование. Специальность педагог-психолог.
+                                    Наставник государственной программы “стратегическое управление талантами в республике татарстан на 2015-2020 годы.
+                                    Эксперт-консультант фасилитатор сообщества педагогических работников “института развития образования республики татарстан”
+                                    Разработчик игры “Карты будущего”.
+                                    Наставник ТОП 100 по результатам всероссийского конкурсного отбора наставников проф.ориентационных мероприятий проекта “Билет в будущее”.
+                                    Публикации в журнале “Актуальная педагогика” ИРО РТ.
+                                    Разработка и проведение тренингов для школьников по “Атласу новых профессий” о новых профессиях и технологиях будущего.
+                                </div>
+                            </div>
                         </div>
-                        <div class="curators-slider__descr">
-                            <div class="curators-slider__descr-title">Епифанова Альбина</div>
-                            <div class="curators-slider__descr-text">
-                                Высшее педагогическое образование. Специальность педагог-психолог.
-                                Наставник государственной программы “стратегическое управление талантами в республике татарстан на 2015-2020 годы.
-                                Эксперт-консультант фасилитатор сообщества педагогических работников “института развития образования республики татарстан”
-                                Разработчик игры “Карты будущего”.
-                                Наставник ТОП 100 по результатам всероссийского конкурсного отбора наставников проф.ориентационных мероприятий проекта “Билет в будущее”.
-                                Публикации в журнале “Актуальная педагогика” ИРО РТ.
-                                Разработка и проведение тренингов для школьников по “Атласу новых профессий” о новых профессиях и технологиях будущего.
+                        <div class="swiper-slide">
+                            <div class="curators-slider__view">
+                                <img src="/build/img/curators-image2.jpg" alt="">
+                            </div>
+                            <div class="curators-slider__descr">
+                                <div class="curators-slider__descr-title">Галиммулин Нияз</div>
+                                <div class="curators-slider__descr-text">
+                                    Высшее техническое образование по направлению Наноэлектроника, диплом с отличием.
+                                    Специализация: микропроцессорная техника.  Награжден стипендией РФ. Обладатель стипендии “Ферекс”, победитель международной молодежной научной конференции “Тинчуринские чтения - 2020: энергетика и цифровая трансформация”.
+                                    Научная деятельность в области микроэлектронных устройств, публикации в рецензируемых научных изданиях.
+                                    Специализация: языки программирования Scratch, Python, C++, Assembler.
+                                    Опыт реализации проектов  пр работе с платами Arduino и их программным обеспечением.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="curators-slider__view">
+                                <img src="/build/img/curators-image3.jpg" alt="">
+                            </div>
+                            <div class="curators-slider__descr">
+                                <div class="curators-slider__descr-title">Тюрин Роман Олегович</div>
+                                <div class="curators-slider__descr-text">
+                                    Куратор направления программирование на Python, Django, веб-разработка.
+                                    Высшее образование
+                                    Опыт проведения занятий для школьников более 4 лет.
+                                    Специализация: Python, создание программ с GUI, 2d-игры в arcade, tkinter, Django, HTML, CSS, асинхронное программирование и основы PostgreSQL.
+                                    - удостоен звания одного из лучших кураторов;
+                                    - осуществляет методическую поддержку кураторов
+                                    ⁃ Имеет более 98% положительных отзывов
+                                    ⁃ Ведет собственную рубрику о технологиях  в Яндекс. Дзен
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="curators-slider__view">
+                                <img src="/build/img/curators-image4.jpg" alt="">
+                            </div>
+                            <div class="curators-slider__descr">
+                                <div class="curators-slider__descr-title">Валитов Булат</div>
+                                <div class="curators-slider__descr-text">
+                                    Куратор направления 3D моделирование и веб-дизайн
+                                    Высшее образование. Казанский национальный исследовательский технический университет им. А.Н. Туполева.
+                                    Специализация: Дизайн проектов, создание моделей( fbx, gltf, dae, stl), текстурирование, сборка проектов.
+                                    Программы: Unity, Blender, Substance Painter
+                                    Опыт работы по направлению более 3 лет.
+                                    Опыт проектной деятельности и реализации коммерческих заказов в реальном секторе экономики.
+                                    ⁃ Разработка собственных проектов для реализации
+                                    ⁃ Умение объяснить сложный материал доходчиво и ясно
+                                    ⁃ Высокий уровень мотивации на результат
+                                    ⁃ Высокий уровень коммуникативных навыков
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="curators-slider__view">
+                                <img src="/build/img/curators-image5.jpg" alt="">
+                            </div>
+                            <div class="curators-slider__descr">
+                                <div class="curators-slider__descr-title">Терентьев Тимур</div>
+                                <div class="curators-slider__descr-text">
+                                    Высшее образование по направлению нанотехнологии и микросистемная техника.
+                                    Специализация: математическое моделирование.
+                                    Есть опыт разработки и создания чат-ботов и численной обработки данных.
+                                    Опыт в преподавании - 3 года.
+                                    Специализация: язык программирования Python.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="curators-slider__view">
-                            <img src="/build/img/curators-image2.jpg" alt="">
-                        </div>
-                        <div class="curators-slider__descr">
-                            <div class="curators-slider__descr-title">Галиммулин Нияз</div>
-                            <div class="curators-slider__descr-text">
-                                Высшее техническое образование по направлению Наноэлектроника, диплом с отличием.
-                                Специализация: микропроцессорная техника.  Награжден стипендией РФ. Обладатель стипендии “Ферекс”, победитель международной молодежной научной конференции “Тинчуринские чтения - 2020: энергетика и цифровая трансформация”.
-                                Научная деятельность в области микроэлектронных устройств, публикации в рецензируемых научных изданиях.
-                                Специализация: языки программирования Scratch, Python, C++, Assembler.
-                                Опыт реализации проектов  пр работе с платами Arduino и их программным обеспечением.
-                            </div>
-                        </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev">
+                        <picture class="icon rotate-left">
+                            <source srcset="/build/img/slider-arrow-right-white.svg" media="(min-width: 768px)">
+                            <img src="/build/img/slider-arrow-right.svg" alt="">
+                        </picture>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="curators-slider__view">
-                            <img src="/build/img/curators-image3.jpg" alt="">
-                        </div>
-                        <div class="curators-slider__descr">
-                            <div class="curators-slider__descr-title">Тюрин Роман Олегович</div>
-                            <div class="curators-slider__descr-text">
-                                Куратор направления программирование на Python, Django, веб-разработка.
-                                Высшее образование
-                                Опыт проведения занятий для школьников более 4 лет.
-                                Специализация: Python, создание программ с GUI, 2d-игры в arcade, tkinter, Django, HTML, CSS, асинхронное программирование и основы PostgreSQL.
-                                - удостоен звания одного из лучших кураторов;
-                                - осуществляет методическую поддержку кураторов
-                                ⁃ Имеет более 98% положительных отзывов
-                                ⁃ Ведет собственную рубрику о технологиях  в Яндекс. Дзен
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="curators-slider__view">
-                            <img src="/build/img/curators-image4.jpg" alt="">
-                        </div>
-                        <div class="curators-slider__descr">
-                            <div class="curators-slider__descr-title">Валитов Булат</div>
-                            <div class="curators-slider__descr-text">
-                                Куратор направления 3D моделирование и веб-дизайн
-                                Высшее образование. Казанский национальный исследовательский технический университет им. А.Н. Туполева.
-                                Специализация: Дизайн проектов, создание моделей( fbx, gltf, dae, stl), текстурирование, сборка проектов.
-                                Программы: Unity, Blender, Substance Painter
-                                Опыт работы по направлению более 3 лет.
-                                Опыт проектной деятельности и реализации коммерческих заказов в реальном секторе экономики.
-                                ⁃ Разработка собственных проектов для реализации
-                                ⁃ Умение объяснить сложный материал доходчиво и ясно
-                                ⁃ Высокий уровень мотивации на результат
-                                ⁃ Высокий уровень коммуникативных навыков
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="curators-slider__view">
-                            <img src="/build/img/curators-image5.jpg" alt="">
-                        </div>
-                        <div class="curators-slider__descr">
-                            <div class="curators-slider__descr-title">Терентьев Тимур</div>
-                            <div class="curators-slider__descr-text">
-                                Высшее образование по направлению нанотехнологии и микросистемная техника.
-                                Специализация: математическое моделирование.
-                                Есть опыт разработки и создания чат-ботов и численной обработки данных.
-                                Опыт в преподавании - 3 года.
-                                Специализация: язык программирования Python.
-                            </div>
-                        </div>
+                    <div class="swiper-button-next">
+                        <picture class="icon">
+                            <source srcset="/build/img/slider-arrow-right-white.svg" media="(min-width: 768px)">
+                            <img src="/build/img/slider-arrow-right.svg" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -230,7 +249,7 @@
                     </div>
                     <div class="curators-bottom__quote">Оставьте заявку прямо сейчас и получите пробный урок для вашего ребенка абсолютно бесплатно!</div>
                     <div class="curators-bottom__btn">
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="sentSuccessfully">
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                             <span class="text-content text-content-mr">Оставить заявку</span>
                             <svg class="icon">
                                 <use href="/build/img/sprite.svg#arrow-right-duo"></use>
@@ -273,11 +292,11 @@
                                 <span>1 раз в неделю по 90 минут</span>
                             </div>
                             <div class="program-descr-slider__details-item program-descr-slider__details-price">
-                                от 4 900 &#8381; в месяц
+                                от 4 900 &#8381; <span class="ruble-font-bold">&#8381;</span> в месяц
                             </div>
                         </div>
                         <div class="program-descr-slider__btn">
-                            <button class="btn btn-small btn-primary" type="button">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                                 <span class="text-content">Записаться на курс</span>
                             </button>
                         </div>
@@ -308,7 +327,7 @@
                             </div>
                         </div>
                         <div class="program-descr-slider__btn">
-                            <button class="btn btn-small btn-primary" type="button">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                                 <span class="text-content">Записаться на курс</span>
                             </button>
                         </div>
@@ -338,7 +357,7 @@
                             </div>
                         </div>
                         <div class="program-descr-slider__btn">
-                            <button class="btn btn-small btn-primary" type="button">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                                 <span class="text-content">Записаться на курс</span>
                             </button>
                         </div>
@@ -370,7 +389,7 @@
                             </div>
                         </div>
                         <div class="program-descr-slider__btn">
-                            <button class="btn btn-small btn-primary" type="button">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                                 <span class="text-content">Записаться на курс</span>
                             </button>
                         </div>
@@ -402,7 +421,7 @@
                             </div>
                         </div>
                         <div class="program-descr-slider__btn">
-                            <button class="btn btn-small btn-primary" type="button">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                                 <span class="text-content">Записаться на курс</span>
                             </button>
                         </div>
@@ -439,53 +458,26 @@
 
             <div class="swiper gallery-slider js-gallery-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
                         <img src="/build/img/gallery-image1.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
                         <img src="/build/img/gallery-image2.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
                         <img src="/build/img/gallery-image3.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
                         <img src="/build/img/gallery-image4.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image1.jpg" alt="">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
+                        <img src="/build/img/gallery-image6.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image2.jpg" alt="">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
+                        <img src="/build/img/gallery-image7.jpg" alt="">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image3.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image4.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image3.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image4.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image2.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image3.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/build/img/gallery-image4.jpg" alt="">
+                    <div class="swiper-slide" data-toggle="modal" data-target="applyRequest">
+                        <img src="/build/img/gallery-image5.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -508,7 +500,7 @@
             <div class="reviews-bottom__descr">
                 <div class="reviews-bottom__quote">Хотите попробовать? <br class="mobile-only"><br class="mobile-only"> Оставьте заявку, и мы подарим вам первый пробный урок совершенно бесплатно!</div>
                 <div class="reviews-bottom__btn">
-                    <button class="btn btn-primary" type="button">
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="applyRequest">
                         <span class="text-content text-content-mr">Хочу бесплатно</span>
                         <svg class="icon">
                             <use href="/build/img/sprite.svg#arrow-right-duo"></use>
@@ -548,14 +540,14 @@
                 <div class="accordion__item">
                     <div class="accordion__header">
                         <button class="h5 accordion__btn js-accordion-btn" type="button">
-                            <span class="content-text">В чем особенности курса программирования?</span>
+                            <span class="content-text">В чем состоит курс программирования?</span>
                             <span class="accordion__btn-icon"></span>
                         </button>
                     </div>
                     <div class="accordion__collapse collapsed">
                         <div class="accordion__collapse-item">
                             <p>На занятиях ребята познакомятся с основами программирования через выполнение в игровой
-                                форме компьютерных заданий в специальном программном интерфейсе Scratch. Ребята
+                                форме компьютерных заданий в специальном программном интерфейсе. На первом этапе ребята занимаются в программе Scratch, а потом переходят на языки программирования Python, Java, C++. Ребята
                                 знакомятся с логикой языка программирования, алгоритмами, циклами и пишут код своих первых
                                 проектов. На первом этапе они делают видеоигры, анимацию, видеооткрытки и переходят к
                                 более сложным проектам.</p>
@@ -565,7 +557,7 @@
                 <div class="accordion__item">
                     <div class="accordion__header">
                         <button class="h5 accordion__btn js-accordion-btn" type="button">
-                            <span class="content-text">Кто работает с ребятами и провидит занятия?</span>
+                            <span class="content-text">Кто работает с ребятами и проводит занятия?</span>
                             <span class="accordion__btn-icon"></span>
                         </button>
                     </div>
